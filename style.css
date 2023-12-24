@@ -18,15 +18,13 @@ body{
 }
 
 .container{
-    border: 1px red solid;
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
 }
 
-.card{
-    border: 1px rgb(174, 0, 255) solid;
+.card{  
     width: 80px;
     border-radius: .75rem;
     background-size: cover;
@@ -85,4 +83,25 @@ input{
 
 input:checked + label {
     width: 600px;
+}
+
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"]{
+    background-image: url('./images/Astronaut.jpg');
+}
+
+.card[for="c2"]{
+    background-image: url('./images/daisy.jpg');
+}
+
+.card[for="c3"]{
+    background-image: url('./images/galaxy-night-panorama.jpg');
+}
+
+.card[for="c4"]{
+    background-image: url('./images/pexels-spacex-586030.jpg');
 }
